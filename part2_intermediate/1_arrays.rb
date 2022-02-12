@@ -1,7 +1,5 @@
+require '../common'
 # frozen_string_literal: true
-def print_delimiter(title)
-  puts "#{'-' * 5} #{title} #{'-' * 5}"
-end
 
 ############# arrays ###############
 ## array can hold different data type
