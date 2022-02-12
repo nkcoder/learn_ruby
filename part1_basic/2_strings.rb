@@ -1,3 +1,5 @@
+require '../common'
+
 ############# string ###############
 ## single quote vs double quote, single quote doesn't support interpolation
 first_name = 'Michael'
@@ -11,26 +13,22 @@ puts 'first name is #{first_name}, last name is #{last_name}'
 
 ## the methods without exclamation returns a new copy
 hello = 'Hello World!'
-puts hello.upcase
-puts hello.downcase
-puts hello.capitalize
-puts hello
+puts "upcase: #{hello.upcase}"
+puts "capitalize: #{hello.capitalize}"
+puts "original: #{hello}"
 
 ## output:
 # HELLO WORLD!
-# hello world!
 # Hello world!
 # Hello World!
 
 ## the methods with exclamation: updates the content of the str, return nil if no changes were made
 content_will_be_changed = 'Hello World!'
 puts content_will_be_changed.upcase!
-puts content_will_be_changed.downcase!
 puts content_will_be_changed.capitalize!
 puts content_will_be_changed
 
 # HELLO WORLD!
-# hello world!
 # Hello world!
 # Hello world!
 
