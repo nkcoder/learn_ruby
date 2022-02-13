@@ -1,4 +1,4 @@
-require '../common'
+require '../util'
 
 ############# string ###############
 ## single quote vs double quote, single quote doesn't support interpolation

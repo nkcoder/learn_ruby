@@ -1,4 +1,5 @@
-require '../common'
+# frozen_string_literal: true
+require '../util'
 
 ############# hashes ###############
 ## hash can hold any data type, return nil if the key not exist in the hash
@@ -32,12 +33,27 @@ symbol_hash.each { |k, v| puts v if k.is_a?(Symbol) }
 # 20
 
 ### useful methods of hash
+# some methods are equivalent, prefer key? over has_key?, prefer value? over has_value?
 print_delimiter('useful methods')
 dict2 = { 'Michael' => 'AU', 'Daniel' => 'US' }
 puts "keys: #{dict2.keys}"
 puts "values: #{dict2.values}"
 puts "length: #{dict2.length}"
 puts "has value?: #{dict2.value?('AU')}"
+puts "has value?: #{dict2.has_value?('AU')}"
+puts "has key?: #{dict2.key?('Anderson')}"
+puts "has key?: #{dict2.has_key?('Daniel')}"
+puts "has key?: #{dict2.include?('Daniel')}"
+
+## output
+# keys: ["Michael", "Daniel"]
+# values: ["AU", "US"]
+# length: 2
+# has value?: true
+# has value?: true
+# has key?: false
+# has key?: true
+# has key?: true
 
 ### each, select
 print_delimiter('each, select')

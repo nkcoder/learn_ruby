@@ -1,4 +1,4 @@
-require '../common'
+require '../util'
 # frozen_string_literal: true
 
 ############# arrays ###############
