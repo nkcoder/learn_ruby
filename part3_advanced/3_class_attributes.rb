@@ -1,6 +1,3 @@
-# frozen_string_literal: true
-
-require '../util'
 ############# class: getter/setter/to_s ###############
 ## method `initialize` will be called when you create a new instance of the class by `.new()`
 ## `@` means it is an instance variable
@@ -21,7 +18,7 @@ class Hat
 
   ## override the default to_s method
   def to_s
-    "This is a hat and the color is: #{@color}"
+    "This is a hat and the color is: #{color}"
   end
 end
 
@@ -39,7 +36,6 @@ puts hat.color
 # green
 
 ############# class: attr_accessor ###############
-print_delimiter('attr_accessor')
 ## attr_reader: only getter
 ## attr_writer: only setter
 ## attr_accessor: both getter and setter

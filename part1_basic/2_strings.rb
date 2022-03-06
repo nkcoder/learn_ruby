@@ -11,7 +11,7 @@ puts 'first name is #{first_name}, last name is #{last_name}'
 # first name is Michael, last name is Dent
 # first name is #{first_name}, last name is #{last_name}
 
-## the methods without exclamation returns a new copy
+## the methods will return a new copy
 hello = 'Hello World!'
 puts "upcase: #{hello.upcase}"
 puts "capitalize: #{hello.capitalize}"
@@ -21,16 +21,6 @@ puts "original: #{hello}"
 # HELLO WORLD!
 # Hello world!
 # Hello World!
-
-## the methods with exclamation: updates the content of the str, return nil if no changes were made
-content_will_be_changed = 'Hello World!'
-puts content_will_be_changed.upcase!
-puts content_will_be_changed.capitalize!
-puts content_will_be_changed
-
-# HELLO WORLD!
-# Hello world!
-# Hello world!
 
 ## string escape
 p 'welcome, #{first_name}'

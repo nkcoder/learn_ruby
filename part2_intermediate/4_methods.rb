@@ -35,3 +35,23 @@ p 'Hello'.methods
 # Integer
 # Float
 # [:unicode_normalize, :unicode_normalize!, :ascii_only? ...
+
+## Predicate methods that end with a question mark ? return either true or false.
+puts 10.even?
+puts 5.odd?
+puts 4.between?(3, 6)
+puts [1, 2, 3].include?(10)
+## output
+# true
+# true
+# true
+# false
+
+## Bang methods end with an exlamation mark, and often modify the object they are called on. So these methods should be avoided.
+last_name = 'Lebron'
+puts last_name.upcase!
+puts last_name
+
+## output
+# LEBRON
+# LEBRON
